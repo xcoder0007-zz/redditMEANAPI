@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/haythamakl/redditMEANAPI.git",
-  "author": "Haytham Akl <silents.coders@gmail.com>",
+  "author": "Haytham Akl <sc@dlmar.com>",
   "license": "MIT",
   "dependencies": {
     "babel-cli": "^6.24.1",

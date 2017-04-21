@@ -1,15 +1,14 @@
 import express from 'express';
+import mainCtrl from './../controllers/main';
 
 const routes = express()
 
 
-routes.get('/',(req,res,next) => {
-res.send('index')
-})
+routes.get('/',mainCtrl.index)
 
 
-routes.get('/API',(req,res,next) => {
-res.send('API')
+routes.get('/API', (req, res, next) => {
+    res.send('API')
 })
 
 export default routes;
