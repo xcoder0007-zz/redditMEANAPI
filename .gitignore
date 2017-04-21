@@ -22,7 +22,8 @@ server/db.js
 
 #dist
 dist
-
+server/db.js
+/server/db.js
 
 # nyc test coverage
 .nyc_output
