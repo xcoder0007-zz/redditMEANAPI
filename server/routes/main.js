@@ -5,10 +5,6 @@ const routes = express()
 
 
 routes.get('/',mainCtrl.index)
-
-
-routes.get('/API', (req, res, next) => {
-    res.send('API')
-})
+routes.get('/API',mainCtrl.index)
 
 export default routes;
