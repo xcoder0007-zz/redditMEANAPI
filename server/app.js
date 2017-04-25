@@ -4,7 +4,7 @@ import db from './db'
 
 
 //ES6 Promise
-mongoose.Promise = global.Promise;
+mongoose.Promise = global.Promise // assign mongoose promisse to global one
 
 const app = express();
 mongoose.connect(db.url);

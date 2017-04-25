@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const { Schema } = mongoose;
-
+const dateNow = new Date().toString();
 const userSchema = new Schema ({
     username : {
         type:String,
@@ -15,10 +15,17 @@ const userSchema = new Schema ({
         required : true,
         minlength:[7,'Password must be 7 Char or more .']
     },
-  created_at: Date,
-  updated_at: Date
+  created_at: {
+     type :Date,
+     default:  dateNow
+  },
+
+    updated_at: {
+     type :Date,
+     default:  dateNow
+  },
 })
 
-const userModel = mongoose.model('userModel',userSchema)
+const userModel = mongoose.model('Users',userSchema)
 
 export default userModel;

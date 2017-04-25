@@ -4,7 +4,6 @@ const userCtrl = {}
 
 userCtrl.post = (req, res, next) => {
     const { username, password } = req.body
-
     const user = new userModel({
         username,
         password
