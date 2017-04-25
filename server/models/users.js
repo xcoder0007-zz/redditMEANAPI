@@ -6,6 +6,7 @@ const userSchema = new Schema ({
     username : {
         type:String,
         required : true,
+        unique: true,
         minlength:[5,'Usernsame must be 5 Char or more .']
     },
 
@@ -14,6 +15,8 @@ const userSchema = new Schema ({
         required : true,
         minlength:[7,'Password must be 7 Char or more .']
     },
+  created_at: Date,
+  updated_at: Date
 })
 
 const userModel = mongoose.model('userModel',userSchema)
