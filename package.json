@@ -12,6 +12,6 @@
     "babel-register": "^6.24.1",
     "express": "^4.15.2",
     "mongoose": "^4.9.5",
-    "nodemon": "^1.11.0"
+    "nodemon": "^2.0.19"
   }
 }
